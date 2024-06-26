@@ -2,30 +2,20 @@
 #container {
     margin: 20px;
     position: relative;
-    padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
 }
 
-#container::before,
-#container::after {
-    content: "Special Text";
+#container::before {
+    content: "Before Element ";
     color: #f00;
     font-size: 20px;
     position: absolute;
-    top: 0;
-    left: -120px; 
-    transform: rotate(-90deg); 
-    transform-origin: center center;
+    left: -150px;
 }
 
 #container::after {
-    content: "Special Text";
+    content: " After Element";
     color: #f00;
     font-size: 20px;
     position: absolute;
-    top: 0;
-    right: -120px;
-    transform: rotate(90deg); 
-    transform-origin: center center;
+    right: -150px;
 }
